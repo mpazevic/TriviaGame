@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trivia Game</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+
+	<audio autoplay="autoplay" loop="loop" id="nujabes">
+		<source src="assets/images/nujabes.mp3" type="audio/mp3">
+	</audio>
+
+	<div class="page-header" id="game-title">
+	  <h1 class="text-center">NATION FACTS TRIVIA</h1>
+	  <div id="mute">
+	  	<div>Music:
+		  <button type="button" id="mute-button" class="btn btn-default btn-lg">
+  		    <span class="glyphicon glyphicon-volume-off" aria-hidden="true"></span>
+		  </button>
+	  	</div>
+	  </div>
+	</div>
+
+	<div class="game-wrapper">
+
+		<div class="button" id="start-button">
+			<button id="start">Start</button>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 text-center" id="time-section">
+				<div id="time-remaining"></div>
+		    </div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 question text-center" id="question-div">
+				<div class="current-question"></div>
+		    </div>
+		</div>
+		
+		<div class="row">
+		  <div class="col-xs-12" id="feedback-section">
+			<div class= "feedback" id="feedback1"></div>
+			<div class="feedback" id="feedback2"></div>
+			<div class="feedback" id="GIF"></div>
+		  </div>
+		</div>
+
+		<div class="row text">
+			<div class="col-xs-12 answer text-center" id="answer1">
+				<div id="answer1-text"></div>
+		    </div>
+		</div>
+
+		<div class="row text">
+			<div class="col-xs-12 answer text-center" id="answer2">
+				<div id="answer2-text"></div>
+		    </div>
+		</div>
+
+		<div class="row text">
+			<div class="col-xs-12 answer text-center" id="answer3">
+				<div id="answer3-text"></div>
+		    </div>
+		</div>
+
+		<div class="row text">
+			<div class="col-xs-12 answer text-center" id="answer4">
+				<div id="answer4-text"></div>
+		    </div>
+		</div>
+
+		<div class="row" id="results-row">
+		  <div class="col-xs-12" id="results-div">
+			<ul style='list-style: none' id="results-list">
+			  <h2 id="result-header"></h2>
+			  <li class='result' id="answers-correct"></li>
+			  <li class='result' id="answers-incorrect"></li>
+			  <li class='result' id="unanswered"></li>
+			</ul>
+
+			<button class="button" id="reset"></button>
+		  </div>
+		</div>
+
+
+	</div>
+
+
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
